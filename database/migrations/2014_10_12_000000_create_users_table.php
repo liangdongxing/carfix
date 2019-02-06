@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->unsignedInteger('FStatus')->default(0);
+            $table->unsignedInteger('status')->default(0);
         });
     }
 
